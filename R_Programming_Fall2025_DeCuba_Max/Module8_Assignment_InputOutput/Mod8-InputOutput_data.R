@@ -1,7 +1,7 @@
 library(plyr)
 # load the 'plyr' package
 
-student6 <- read.table(file.choose(), header = TRUE, stringsAsFactors = FALSE)
+student6 <- read.table(file.choose(), header = TRUE, sep = ",", stringsAsFactors = FALSE)
 # prompt the user to select a data file
 
 gender_mean <- ddply(
