@@ -1,0 +1,45 @@
+---
+title: "My Markdown Primer"
+author: "Max De Cuba"
+date: "2025-11-14"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+R Markdown is a format that lets me combine regular text, code, and the results of that code in a single document. It helps create reports that are both readable and reproducible, since the analysis and its explanation stay together. This file illustrates a few of the basic features.
+
+Working in R Markdown feels different from writing a normal report, mostly because I can run code and immediately show what it produced. This helps prevent small mistakes or outdated screenshots since the final knitted document always reflects the latest results.
+
+You can write math inline, such as $\alpha + \beta = \gamma$.
+
+## Working With R Code
+
+Below is a simple R code chunk that loads a dataset and shows summary statistics.
+
+
+```{r cars}
+summary(cars)
+```
+
+## A Simple Plot
+
+The next chunk uses ggplot2 to produce a scatterplot from the mtcars dataset.
+This version uses your preferred formatting and keeps the structure simple.
+
+```{r ggplot}
+library(ggplot2)
+
+ggplot(mtcars, aes(wt, mpg)) +
+geom_point() +
+xlab("Car weight (lb/1000)") +
+ylab("Miles per gallon")
+```
+
+## Conclusion
+
+Using R Markdown helped me keep the explanation and the analysis in the same place, which made the process more organized. Compared to writing a plain report, this approach reduces the chance of mismatched numbers or outdated charts, since everything is generated when I knit the file.
