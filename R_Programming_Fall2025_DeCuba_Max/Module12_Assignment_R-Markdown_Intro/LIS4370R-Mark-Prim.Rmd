@@ -17,6 +17,13 @@ Working in R Markdown feels different from writing a normal report, mostly becau
 
 You can write math inline, such as $\alpha + \beta = \gamma$.
 
+You can also display equations on their own line:
+
+
+$$
+y = \beta_0 + \beta_1 x
+$$
+
 ## Working With R Code
 
 Below is a simple R code chunk that loads a dataset and shows summary statistics.
